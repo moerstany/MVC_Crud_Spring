@@ -3,10 +3,9 @@ package ru.luginina.crudspring.config.controllers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 import ru.luginina.crudspring.AutoDao.AutoDao;
+import ru.luginina.crudspring.models.Auto;
 
 @Controller
 @RequestMapping("/auto")
@@ -30,4 +29,16 @@ public class AutosController {
        model.addAttribute("auto", autoDao.show(id));
         return "auto/show";
     }
+    @GetMapping("/new")
+    public String newAuto(@ModelAttribute("auto")Auto auto){
+
+        return"auto/new";
+    }
+    @PostMapping
+    public String create(@ModelAttribute("auto") Auto auto){
+
+        autoDao.save(auto);
+        return "redirect:/auto";
+    }
+
 }

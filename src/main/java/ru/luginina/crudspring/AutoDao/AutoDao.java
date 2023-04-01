@@ -22,4 +22,8 @@ public class AutoDao {
         //найти авто с таким же id  в списке если его нет то вернуть ничто.
         return autos.stream().filter(auto -> auto.getId() == id).findAny().orElse(null);
     }
+    public void save(Auto auto){
+        auto.setId(++AvtoCount);
+        autos.add(auto);
+    }
 }
