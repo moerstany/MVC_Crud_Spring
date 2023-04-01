@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77408a68-60c6-41b2-904c-efe8d834dc75" name="Changes" comment="внедрили модель в гет запросы, калькулятор">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/luginina/crudspring/config/controllers/AvtoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/luginina/crudspring/models/AvtoPark.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/luginina/crudspring/AutoDao/AutoDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/auto/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/auto/show.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/luginina/crudspring/AvtoDao/AvtoDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/luginina/crudspring/config/MVCInitialaser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/luginina/crudspring/config/MVCInitialaser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/luginina/crudspring/config/controllers/AvtoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/luginina/crudspring/config/controllers/AutosController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/luginina/crudspring/models/AvtoPark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/luginina/crudspring/models/Auto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -76,6 +83,9 @@
       <predefined_log_file id="Tomcat Host Manager Log" />
       <option name="contextPath" value="" />
       <option name="docBase" value="$PROJECT_DIR$/src/main/webapp" />
+      <option name="envOptions">
+        <map />
+      </option>
       <option name="extraClassPath" value="" />
       <option name="tomcatInfo">
         <TomcatInfo>
@@ -179,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679852764713</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="внедрили модель в гет запросы, калькулятор">
+      <created>1680198575913</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1680198575913</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

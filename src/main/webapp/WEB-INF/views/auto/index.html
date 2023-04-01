@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Autopark</title>
+</head>
+<body>
+<div th:each="auto : ${autos}">
+    <a th:href="@{/auto/{id}(id=${auto.getId()})}" th:text="${auto.getName()}">user</a>
+
+
+</div>
+</body>
+</html>

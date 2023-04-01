@@ -1,6 +1,6 @@
 package ru.luginina.crudspring.models;
 
-public class AvtoPark {
+public class Auto {
         Integer id;
         String Name;
         String Brend;
@@ -49,14 +49,14 @@ public class AvtoPark {
 
 
 
-    public AvtoPark(Integer id, String name, String brend, String number, Double price) {
+    public Auto(Integer id, String name, String brend, String number, Double price) {
         this.id = id;
         this.Name = name;
         this.Brend = brend;
         this.Number = number;
         this.Price = price;
     }
-    public AvtoPark() {
+    public Auto() {
         this.id = 0;
         this.Name = "name";
         this.Brend = "brend";
