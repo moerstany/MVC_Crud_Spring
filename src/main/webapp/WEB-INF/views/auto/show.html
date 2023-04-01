@@ -10,6 +10,11 @@
 <p th:text="${auto.getBrend()}">VALUE</p>
 <p th:text="${auto.getNumber()}">VALUE</p>
 <p th:text="${auto.getPrice()}">VALUE</p>
+<br>
+<a th:href="@{/auto/{id}/edit(id=${auto.getId()})}">Edit</a>
 
+<form th:method="DELETE" th:action="@{/auto/{id}(id=${auto.getId()})}">
+    <input type="submit" value="Delete"/>
+</form>
 </body>
 </html>

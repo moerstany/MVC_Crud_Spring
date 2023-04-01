@@ -4,11 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77408a68-60c6-41b2-904c-efe8d834dc75" name="Changes" comment="реализовали чтение">
+    <list default="true" id="77408a68-60c6-41b2-904c-efe8d834dc75" name="Changes" comment="реализовали добавление записи">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/auto/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/auto/new.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/luginina/crudspring/AutoDao/AutoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/luginina/crudspring/AutoDao/AutoDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/luginina/crudspring/config/MVCInitialaser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/luginina/crudspring/config/MVCInitialaser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/luginina/crudspring/config/controllers/AutosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/luginina/crudspring/config/controllers/AutosController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/luginina/crudspring/models/Auto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/luginina/crudspring/models/Auto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/auto/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/auto/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/auto/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/auto/show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680315119389</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="реализовали добавление записи">
+      <created>1680318799446</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1680318799446</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -219,6 +233,7 @@
     <MESSAGE value="Get запросы" />
     <MESSAGE value="внедрили модель в гет запросы, калькулятор" />
     <MESSAGE value="реализовали чтение" />
-    <option name="LAST_COMMIT_MESSAGE" value="реализовали чтение" />
+    <MESSAGE value="реализовали добавление записи" />
+    <option name="LAST_COMMIT_MESSAGE" value="реализовали добавление записи" />
   </component>
 </project>

@@ -3,9 +3,12 @@ package ru.luginina.crudspring.config.controllers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import ru.luginina.crudspring.AutoDao.AutoDao;
 import ru.luginina.crudspring.models.Auto;
+
+import javax.validation.Valid;
 
 @Controller
 @RequestMapping("/auto")
@@ -35,10 +38,30 @@ public class AutosController {
         return"auto/new";
     }
     @PostMapping
-    public String create(@ModelAttribute("auto") Auto auto){
-
+    public String create(@ModelAttribute("auto") @Valid Auto auto, BindingResult bindingResult){
+      if (bindingResult.hasErrors())
+       return "auto/new";
         autoDao.save(auto);
         return "redirect:/auto";
     }
+    @GetMapping("/{id}/edit")
+    public String edit(Model model, @PathVariable("id") int id){
+        model.addAttribute("auto", autoDao.show(id));
+        return "auto/edit";
+    }
+    @PatchMapping("/{id}")
+    public String update(@ModelAttribute("auto") @Valid Auto auto,BindingResult bindingResult,
+                         @PathVariable("id")int id){
 
+        if (bindingResult.hasErrors())
+            return "auto/edit";
+        autoDao.update(id,auto);
+        return "redirect:/auto";
+    }
+
+    @DeleteMapping("/{id}")
+    public String delete(@PathVariable("id")int id){
+        autoDao.delete(id);
+        return "redirect:/auto";
+    }
 }

@@ -26,4 +26,14 @@ public class AutoDao {
         auto.setId(++AvtoCount);
         autos.add(auto);
     }
+    public void update(int id, Auto updatedAuto){
+        Auto autoUpdated=show(id);
+        autoUpdated.setName(updatedAuto.getName());
+        autoUpdated.setBrend(updatedAuto.getBrend());
+        autoUpdated.setNumber(updatedAuto.getNumber());
+        autoUpdated.setPrice(updatedAuto.getPrice());
+    }
+    public void delete(int id){
+        autos.removeIf(a->a.getId()==id);
+    }
 }

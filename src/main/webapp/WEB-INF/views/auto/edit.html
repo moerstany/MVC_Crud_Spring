@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Auto</title>
+</head>
+<body>
+<form th:method="PATCH" th:action="@{/auto/{id}(id=${auto.getId()})}" th:object="${auto}">
+  <label for="name">Enter name: </label>
+  <input type="text" th:field="*{name}" id="name"/>
+
+  <div th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Error</div><br/>
+  <label for="brend">Enter brend: </label>
+  <input type="text" th:field="*{brend}" id="brend"/>
+  <div th:if="${#fields.hasErrors('brend')}" th:errors="*{brend}">Error</div>
+  <br/>
+  <label for="number">Enter number: </label>
+  <input type="text" th:field="*{number}" id="number"/>
+  <div th:if="${#fields.hasErrors('number')}" th:errors="*{number}">Error</div>
+  <br/>
+  <label for="price">Enter price: </label>
+  <input type="text" th:field="*{price}" id="price"/>
+  <div th:if="${#fields.hasErrors('price')}" th:errors="*{price}">Error</div>
+  <br/>
+  <input type="submit" value="Update!"/>
+</form>
+</body>
+</html>
