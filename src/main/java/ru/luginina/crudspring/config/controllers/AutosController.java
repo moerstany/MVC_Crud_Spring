@@ -38,9 +38,10 @@ public class AutosController {
         return"auto/new";
     }
     @PostMapping
-    public String create(@ModelAttribute("auto") @Valid Auto auto, BindingResult bindingResult){
-      if (bindingResult.hasErrors())
-       return "auto/new";
+    public String create(@ModelAttribute("auto") /*@Valid*/ Auto auto /*, BindingResult bindingResult*/){
+     /* if (bindingResult.hasErrors())
+       return "auto/new";*/
+
         autoDao.save(auto);
         return "redirect:/auto";
     }
@@ -50,11 +51,12 @@ public class AutosController {
         return "auto/edit";
     }
     @PatchMapping("/{id}")
-    public String update(@ModelAttribute("auto") @Valid Auto auto,BindingResult bindingResult,
+    public String update(@ModelAttribute("auto") /*@Valid*/ Auto auto /*,BindingResult bindingResult*/,
                          @PathVariable("id")int id){
 
-        if (bindingResult.hasErrors())
-            return "auto/edit";
+        /*if (bindingResult.hasErrors())
+            return "auto/edit";*/
+
         autoDao.update(id,auto);
         return "redirect:/auto";
     }
